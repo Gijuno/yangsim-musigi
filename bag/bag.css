@@ -1,0 +1,72 @@
+@font-face { 
+    font-family: 'Cafe24Oneprettynight'; 
+    src: url(/res/fonts//Cafe24Oneprettynight.ttf) format('truetype'); }
+
+p {
+    font-family: Cafe24Oneprettynight;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #FFFFFF;
+    position:fixed;
+    width: auto;
+    left: 0;
+    right: 0;
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.container {
+    padding-top: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: auto;
+    height: auto;
+}
+
+#pageTitle {
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.itemImg {
+    margin-right: 50px;
+    float: left;
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.25);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.itemImg > p {
+    font-size: 20px;
+}
+
+#packageItem {
+    background-image: url("/res/img/musigi-package.png");
+}
+
+#oneItem {
+    background-image: url("/res/img/musigi-logo.png");
+}
+
+#reset {
+    align-items: center;
+    color: red;
+}
+
+#reset > p {
+    font-size: 30px;
+}

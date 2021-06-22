@@ -1,6 +1,6 @@
 @font-face { 
     font-family: 'Cafe24Oneprettynight'; 
-    src: url(./res/fonts//Cafe24Oneprettynight.ttf) format('truetype'); }
+    src: url(/res/fonts//Cafe24Oneprettynight.ttf) format('truetype'); }
 
 p {
     font-family: Cafe24Oneprettynight;
@@ -21,31 +21,6 @@ header {
     margin-right: 100px;
 }
 
-.logo {
-    cursor: pointer;
-    float: left;
-    font-size: 35px;
-}
-
-.pages {
-    margin-top: 12px;
-    display: flex;
-    float: right;
-    font-size: 25px;
-}
-
-.pages > p {
-    cursor: pointer;
-}
-
-.pages > #about {
-    margin-right: 40px;
-}
-
-.pages > #products {
-    margin-right: 40px;
-}
-
 
 .container {
     width: 100%;
@@ -54,7 +29,7 @@ header {
 
 .container > #frame-1 {
     background-repeat: no-repeat;
-    background-image: url("./res/img/paper_background.png");
+    background-image: url("/res/img/paper_background.png");
 }
 
 #go-down {

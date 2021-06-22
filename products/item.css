@@ -1,0 +1,118 @@
+@font-face { 
+    font-family: 'Cafe24Oneprettynight'; 
+    src: url(/res/fonts//Cafe24Oneprettynight.ttf) format('truetype'); }
+
+p {
+    font-family: Cafe24Oneprettynight;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    z-index: 2;
+    background: #FFFFFF;
+    position:fixed;
+    width: auto;
+    left: 0;
+    right: 0;
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.container {
+    padding-top: 250px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: auto;
+    height: auto;
+}
+
+.introduce {
+    float: left;
+}
+
+.buy_div {
+    font-size: 30px;
+    float: right;
+}
+
+.count_div > p, .count_div > input{
+    float: left;
+    margin: 0;
+}
+
+.count_div > p {
+    margin-top: 3px;
+    margin-right: 20px;
+}
+
+.count_div > input {
+    text-align: right;
+    outline: 0;
+    border-width: 0 0 2px;
+    width: 150px;
+    padding-left: 0px;
+    font-size: 30px;
+    font-family: Cafe24Oneprettynight;
+}
+
+#itemName {
+    font-size: 50px;
+    margin-top: 0;
+}
+#itemImg {
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.25);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#description, #title {
+    font-size: 30px;
+}
+
+.radius_button {
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.radius_button > p {
+    margin: 15px;
+    text-align: center;
+    padding: 9px;
+    
+}
+
+#addBag {
+    background-color: #000000;
+}
+
+#addBag > p{
+    color: #FFFFFF;
+}
+
+#kakao_buy {
+    background-color: #FFEB00;
+}
+
+#toss_buy {
+    background-color: #0050FF;
+}
+
+#toss_buy > p {
+    color: #FFFFFF;
+}
+
+#naver_buy {
+    background-color: #00C63B;
+}
+
+#naver_buy > p {
+    color: #FFFFFF;
+}

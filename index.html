@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <link href="./index.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="/index.css" rel="stylesheet" type="text/css" />
+    <script src="/index.js"></script>
     <title>양심 머시기</title>
+    <link rel="shortcut icon" href="/res/img/musigi-logo.ico">
+    <link rel="icon" href="/res/img/musigi-logo.ico">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <p>양심 머시기</p>
-        </div>
-        <div class="pages">
-            <p id="about">About</p>
-            <p id="products">Products</p>
-            <p id="bag">Bag</p>
-        </div>
+    <header include-html="/header.html">
     </header>
 
     <div class="container">
         <div class="frame" id="frame-1">
             <p id="title">"양심을 팝니다"</p>
-            <img class="highlight" src="./res/img/red_highlight.svg">
-            <img id="go-down" src="./res/img/go_down.svg">
+            <img class="highlight" src="/res/img/red_highlight.svg">
+            <img id="go-down" src="/res/img/go_down.svg" onclick="goDownBtn()">
+            <script>
+            function goDownBtn() {
+                $("html, body").animate({ scrollTop: 860 }, 300);
+            }
+            </script>
         </div>
         
         <div class="frame" id="frame-2">
@@ -35,8 +36,8 @@
 
         <div class="frame" id="frame-4">
             <p id="title">“혹시 양심이 필요하시다면 . . .”</p>
-            <p id="go_to_buy">양심 구매하기 -></p>
-            <img class="highlight" src="./res/img/red_highlight.svg">
+            <p id="go_to_buy" onclick="location.href='/products/products.html'">양심 구매하기 -></p>
+            <img class="highlight" src="/res/img/red_highlight.svg">
         </div>
     </div>
      

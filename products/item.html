@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link href="./item.css" rel="stylesheet" type="text/css" />
+    <title>양심 머시기 - Items</title>
+    <link rel="shortcut icon" href="/res/img/musigi-logo.ico">
+    <link rel="icon" href="/res/img/musigi-logo.ico">
+</head>
+<body>
+    <header include-html="/header.html">
+    </header>
+
+    <div class="container">
+        <div class="introduce">
+            <p id="itemName"></p>
+            <div id="itemImg"></div>
+            <p id="title">당신의 양심, 오늘은 안녕하셨나요?</p>
+            <p id="description"></p>
+        </div>
+        <div class="buy_div">
+            <div class="count_div">
+                <p>수량 : </p>
+                <input id="count" type="number" value="1" min="0" onchange="price()" onkeyup="price()" >
+                <p>개</p>
+            </div>
+            <br><p id="price"></p>
+            <div class="radius_button" id="addBag" onclick="addBag()">
+                <p>장바구니에 담기</p>
+            </div>
+            <div class="radius_button" id="kakao_buy" onclick="buy('카카오페이')">
+                <p>Kakako Pay</p>
+            </div>
+            <div class="radius_button" id="toss_buy" onclick="buy('토스')">
+                <p>toss</p>
+            </div>
+            <div class="radius_button" id="naver_buy" onclick="buy('네이버 페이')">
+                <p>Naver Pay</p>
+            </div>
+        </div>
+        
+    </div>
+
+    
+    <script src="./item.js"></script>
+</body>
+</html>

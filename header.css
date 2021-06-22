@@ -1,0 +1,24 @@
+.logo {
+    cursor: pointer;
+    float: left;
+    font-size: 35px;
+}
+
+.pages {
+    margin-top: 12px;
+    display: flex;
+    float: right;
+    font-size: 25px;
+}
+
+.pages > p {
+    cursor: pointer;
+}
+
+.pages > #about {
+    margin-right: 40px;
+}
+
+.pages > #products {
+    margin-right: 40px;
+}
